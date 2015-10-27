@@ -44,5 +44,6 @@ public class ClassInitialization {
     System.out.println(Initable3.staticNonFinal);
     
     System.out.println("All is done.");
+       
   }
 }
