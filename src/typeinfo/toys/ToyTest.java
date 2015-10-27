@@ -21,6 +21,7 @@ public class ToyTest {
         + cc.isInterface() + "]");
     System.out.println("Simple name: " + cc.getSimpleName());
     System.out.println("Canoical name: " + cc.getCanonicalName());
+     
   }
   
   public static void main(String[] args) {
