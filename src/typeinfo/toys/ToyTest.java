@@ -22,6 +22,7 @@ public class ToyTest {
     
     System.out.println("Simple name: " + cc.getSimpleName());
     
+    
     System.out.println("Canoical name: " + cc.getCanonicalName());
      
   }
