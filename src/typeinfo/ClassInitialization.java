@@ -42,5 +42,7 @@ public class ClassInitialization {
     Class initable3 = Class.forName("typeinfo.Initable3");
     System.out.println("After creating Initable3 ref");
     System.out.println(Initable3.staticNonFinal);
+    
+    System.out.println("All is done.");
   }
 }
