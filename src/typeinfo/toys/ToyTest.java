@@ -19,8 +19,12 @@ public class ToyTest {
   static void printInfo(Class cc) {
     System.out.println("Class name: " + cc.getName() + " is interface? ["
         + cc.isInterface() + "]");
+    
     System.out.println("Simple name: " + cc.getSimpleName());
+    
+    
     System.out.println("Canoical name: " + cc.getCanonicalName());
+     
   }
   
   public static void main(String[] args) {
