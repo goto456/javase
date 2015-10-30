@@ -9,6 +9,7 @@ public class DirList2 {
   public static FilenameFilter filter(final String regex) {
     return new FilenameFilter() {
       private Pattern pattern = Pattern.compile("regex");
+      
       @Override
       public boolean accept(File dir, String name) {
         return pattern.matcher(name).matches();
