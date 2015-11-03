@@ -29,9 +29,34 @@ public class ProcessFiles {
         processDirectoryTree(new File("."));
       }
       else {
-        
+        for (String arg : args) {
+          File fileArg = new File(arg);
+          if (fileArg.isDirectory()) {
+            processDirectoryTree(fileArg);
+          }
+          else {
+            if (!arg.endsWith("." + ext)) {
+              arg += "." + ext;
+              strategy.process(new File(arg).getCanonicalFile());
+            }
+          }
+        }
       }
-    }
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }    
+  }
+  
+    
+  public static void main(String[] args) {
+    new ProcessFiles(new Strategy() {
+      
+      @Override
+      public void process(File file) {
+        // TODO Auto-generated method stub
+        System.out.println(file);
+      }
+    }, "java").start(args);
   }
   
   
