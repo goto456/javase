@@ -19,6 +19,7 @@ public class FileOutputShortCut {
       System.out.println(lineCount++ + ": " + s);
     }
     out.close();
+    
     System.out.println(BufferedInputFile.read(file));
   }
 }
