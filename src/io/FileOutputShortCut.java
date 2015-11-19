@@ -14,6 +14,7 @@ public class FileOutputShortCut {
             BufferedInputFile.read("src\\io\\FileOutputShortCut.java")));
     PrintWriter out = new PrintWriter(file);
     String s;
+    
     int lineCount = 1;
     while ((s = in.readLine()) != null) {
       System.out.println(lineCount++ + ": " + s);
