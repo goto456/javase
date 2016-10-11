@@ -23,7 +23,6 @@ public class EvenChecker implements Runnable {
                 intGenerator.cancel();
             }
         }
-        System.out.println("xxx");
     }
 
     public static void test(IntGenerator intGenerator, int count) {
