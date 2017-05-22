@@ -4,4 +4,7 @@ bin/
 .classpath
 .project
 *.iml
+*.gz
+*.jar
+*.zip
 
